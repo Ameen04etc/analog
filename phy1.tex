@@ -1,0 +1,53 @@
+\documentclass{article}
+\usepackage{amsmath}
+\usepackage{enumitem}
+\usepackage{multicol}
+
+\begin{document}
+
+\begin{center}
+\Large{11.14.21}
+
+\normalsize{EE23BTECH11006}
+\end{center}
+
+
+
+\section*{\centering{\large\bfseries{Question:}}}
+You are riding in an automobile of mass 3000 kg. Assuming that you are examining the oscillation characteristics of its suspension system. The suspension sags 15 cm when the entire automobile is placed on it. Also, the amplitude of oscillation decreases by 50% during one complete oscillation. Estimate the values of
+\begin{enumerate}[label=(\alph*)]
+    \item The spring constant \( K \)
+    \item The damping constant \( b \) for the spring and shock absorber system of one wheel, assuming that each wheel supports 750 kg.
+\end{enumerate}
+
+\section*{\centering{\large\bfseries{Solution:}}}
+
+\begin{enumerate}[label=\textbf{Part-\alph*:}]
+    \item We know \(15\, \text{cm} = 0.15\, \text{m}\). Initially, the normal reaction on each of the wheels,
+    \begin{align}
+&N = Kx \\
+\Rightarrow &750g = 0.15 \cdot K \quad (\text{The suspension sags 15 cm})\\
+\Rightarrow &K = \frac{750 \cdot 9.8}{0.15}\, \text{N/m} \quad (g = 9.8\, \text{m/s}^2) \\
+\Rightarrow &K = 4.9 \times 10^4\, \text{N/m}        
+    \end{align}
+    
+
+    \item Now, as the weight is evenly distributed over the four wheels, we can consider each wheel-suspension system as a spring-mass system with mass, \(m = 750\, \text{kg}\), and \(K = 4.9 \times 10^4\, \text{N/m}\). So the time period of oscillation will be close to \(T = \frac{\pi}{2} \sqrt{\frac{m}{K}}\).
+
+    Now for any point in time, if the amplitude is \(A\) with initial amplitude \(A_{\text{0}}\), then we have,
+    \begin{align}
+&A = A_{\text{0}}e^{-(\beta t)} \quad (\beta = \frac{b}{2m}) \\
+\Rightarrow &\beta = \frac{\ln(2)}{2\pi} \sqrt{\frac{K}{m}} \quad \\
+\Rightarrow &b = 1337.53\, \text{kg/s} 
+    \end{align}
+\end{enumerate}
+
+\section*{\centering{\large\bfseries{Answer:}}}
+
+\begin{enumerate}[label=\textbf{Part-\alph*:}]
+    \item The spring constant, \(K = 4.9 \times 10^4\, \text{N/m}\).
+    \item The damping constant, \(b = 1337.53\, \text{kg/s}\).
+\end{enumerate}
+
+
+\end{document}
